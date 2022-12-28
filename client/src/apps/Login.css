@@ -1,0 +1,112 @@
+.loginconflictwrapper {
+
+}
+
+.loginwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    background-color: #699778;
+    float: right;
+    color: white;
+}
+
+h1 {
+    font-family: 'Lobster' !important;
+}
+
+.loginmedia {
+    width: 50%;
+    float: left;
+}
+
+.logincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logindescription {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.loginfield {
+    border: 2px solid #ffffff6e;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Email {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #ffffff6e;
+    width: 375px;
+}
+
+.Password {
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #ffffff6e;
+    width: 375px;
+}
+
+.register {
+    cursor: pointer;
+}
+
+
+.login-button {
+    padding: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;
+    color: #699778;
+    border-radius: 5px;
+}
+
+.login-button:hover {
+    background-color: #699778;
+    color: white;
+    transition: 0.8s ease;
+}
+
+.login-button:focus {
+    background-color: #699778;
+    color: white;
+    transition: 0.8s ease;
+}
+
+@media (max-width: 768px) {
+    .loginmedia {
+        display: none;
+    }
+
+    .loginwrapper {
+        width: 100%;
+        float: none;
+    }
+
+    .logindescription {
+        width: 80%;
+    }
+
+    .Email {
+        width: 275px;
+    }
+    
+    .Password {
+        width: 275px;
+    }
+
+    .loginfield {
+        margin: 10px;
+    }
+}
+  

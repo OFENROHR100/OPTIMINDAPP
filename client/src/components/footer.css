@@ -1,0 +1,108 @@
+.footer-section {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #699778;
+}
+
+.textlogofooter {
+  color: #ffffff;
+  font-size: 32px;
+  box-sizing: border-box;
+  font-family: 'Lobster' !important;
+}
+
+.footerwrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.footerdescription {
+  margin-right: 20px;
+  padding-right: 20px;
+  border-right: 2px solid #ffffff6e;
+}
+
+.footerlinks {
+  text-align: left;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.footericons {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #ffffff6e;
+}
+
+.iconfooter {
+  display: inline-block; 
+  height: 30px; 
+  width: 30px;
+  margin-right: 10px;
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(342deg) brightness(104%) contrast(101%);
+}
+
+@media (max-width: 768px) {
+  .footerdescriptionquery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .footerdescription {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffffff6e;
+    width: 80%;
+    text-align: center;
+    margin-right: 0;
+    padding-right: 0;
+    border-right: 0;
+  }
+  
+  .footerlinksquery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .footerlinks {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .footericonsquery {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  
+  .footericons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 0;
+    border-top: 2px solid #ffffff6e;
+    border-left: 0;
+    width: 80%;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+}

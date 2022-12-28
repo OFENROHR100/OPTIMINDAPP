@@ -1,0 +1,152 @@
+*:not(.navbar, .textlogo) {
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image-wrapper1 {
+  position: relative;
+  display: flex;
+}
+
+.home1 {
+  width: 100vw;
+}
+
+.hometext {
+  color: white;
+  width: 30vw;
+  position: absolute;
+  bottom: 40vh;
+  left: 17vw;
+  right: 0;
+}
+
+.hometitle {
+  font-size: 55px;
+  font-family: "Lobster" !important;
+}
+
+.homedescription {
+  line-height: 25px;
+}
+
+.iconstart {
+  display: inline-block; 
+  height: 20px; 
+  width: 20px;
+  margin-right: 10px;
+  filter: invert(100%) sepia(1%) saturate(0%) hue-rotate(342deg) brightness(104%) contrast(101%);
+}
+
+.homegrid {
+  background-color: white;
+  color: #699778;
+  height: 30%;
+  display: grid;
+  place-items: center;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: none;
+}
+
+.hometitlegrid {
+  font-size: 35px;
+  font-family: "Lobster" !important;
+  display: none;
+}
+
+.homedescriptiongrid {
+  line-height: 20px;
+  display: none;
+}
+
+.homedescriptionrow {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.homedescriptioncontainer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 15px;
+  border: 5px solid #699778;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px;
+  text-align: justify;
+}
+
+.homeicondescription {
+  position: absolute;
+  top: 0;
+  left: 75px;
+  width: 35%;
+  filter: invert(58%) sepia(27%) saturate(415%) hue-rotate(87deg) brightness(91%) contrast(84%);
+  margin: 15px;
+}
+
+.homedescriptioncontainertext {
+  margin-top: 115px;
+}
+
+.homemap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homemapcontainertext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 50%;
+}
+
+.textlogo {
+  color: #699778;
+  font-size: 32px;
+  margin: 5px;
+  box-sizing: border-box;
+  font-family: 'Lobster' !important;
+}
+
+.homemapcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .hometext {
+    display: none;
+  }
+
+  .homegrid {
+    display: grid;
+  }
+  
+  .hometitlegrid {
+    display: block;
+  }
+  
+  .homedescriptiongrid {
+    display: block;
+  }
+}
+
+

@@ -1,0 +1,33 @@
+* {
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image-wrapper1 {
+  position: relative;
+  display: flex;
+}
+
+.home1 {
+  width: 100vw;
+}
+
+.home1text {
+  color: white;
+  width: 30vw;
+  position: absolute;
+  bottom: 40vh;
+  left: 20vw;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .home1text {
+    bottom: 65vh;
+    font-size: smaller;
+  }
+}
+
+
