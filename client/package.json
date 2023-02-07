@@ -1,6 +1,7 @@
 {
   "name": "client",
   "version": "0.1.0",
+  "homepage": ".",
   "allowedHosts": "all",
   "dependencies": {
     "@babel/runtime": "^7.20.6",
