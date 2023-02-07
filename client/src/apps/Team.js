@@ -1,40 +1,16 @@
 import './App.css';
-import Header from '../components/header';
-import Footer from '../components/footer';
-import home1 from '../images/home1.webp';
 import Simon_Tautz from '../images/Simon_Tautz.webp';
 import Henri_Mache from '../images/Henri_Mache.webp';
 import Simon_Lang from '../images/Simon_Lang.webp';
-import Formular_Image from '../images/Formular_Image.webp';
-import Sponsor_TZL from '../images/Sponsor_IBIZ.webp';
-import Sponsor_UNI from '../images/Sponsor_SEMMELBROTHERS.webp';
+import React, { useLayoutEffect, useEffect, useState } from 'react';
+import Header from '../components/header';
+import Footeralt from '../components/footeralt';
 
-function Home() {
+function Team() {
   return (
-    <div className="Shop">
-      <Header></Header>
-      <div className="image-Wrapper1">
-        <img src={home1} className="home1" alt="home1"/>
-        <div className="hometext">
-          <p className='hometitle'>Was machen wir?</p>
-          <p className='homedescription'>Unser Club ist für junge motivierte und ambitionierte Menschen, die einen Unterschied machen möchten. Unser Fokus liegt darauf, Probleme zu lösen und gleichzeitig ein Netzwerk und Freundschaften aufzubauen. 
-          Der Club ist der perfekte Ort für Debatten/Diskussionen über jegliche Themen und Ideen, für Hilfe und Unterstützung bei Prototyping, Geschäftsberatung oder einfach nur jemanden zum Reden. Wir treffen uns wöchentlich online und haben 
-          monatliche Treffen vor Ort. Diese Treffen bieten die Möglichkeit, tiefere Verbindungen und Beziehungen aufzubauen, sowie Fortschritte und Ideen zu präsentieren und zu diskutieren.</p>
-        </div>
-      </div>
-      <div className='homegrid'>
-        <p className='hometitlegrid'>Was machen wir?</p>
-        <p className='homedescriptiongrid'>Unser Club ist für junge motivierte und ambitionierte Menschen, die einen Unterschied machen möchten. Unser Fokus liegt darauf, Probleme zu lösen und gleichzeitig ein Netzwerk und Freundschaften aufzubauen. 
-          Der Club ist der perfekte Ort für Debatten/Diskussionen über jegliche Themen und Ideen, für Hilfe und Unterstützung bei Prototyping, Geschäftsberatung oder einfach nur jemanden zum Reden. Wir treffen uns wöchentlich online und haben 
-          monatliche Treffen vor Ort. Diese Treffen bieten die Möglichkeit, tiefere Verbindungen und Beziehungen aufzubauen, sowie Fortschritte und Ideen zu präsentieren und zu diskutieren.</p>
-      </div>
-      <div className='hometitle5'>Was bieten wir?</div>
-      <div className='homeinformationcontainer'>
-        <div className='homeinformation1'>Wöchentliche online Meetings (monatlich auch in Präsenz) mit Diskussionen und Debatten über Themen, Vorstellungen von Geschäftsideen, Raum für persönlichen Entwicklung und Zusammenarbeit an Projekten.</div>
-        <div className='homeinformation2'>Vorträge und Weiterbildungen von Professoren (der universität Lübeck) und Personen aus der Freien Wirtschaft über verschiedene Themen, wie Themen in naturwissenschaftlichen oder gewerblichen Bereichen.</div>
-        <div className='homeinformation3'>Netzwerk von motivierten und ambitionierten Personen, die Probleme lösen wollen, eine enge Zusammenarbeit untereinander führen und bereit sind Ideen auszustauschen und umzusetzen. </div>
-      </div>
-      <div className='hometitle3'>Unser Team</div>
+    <div className="Team">
+        <Header></Header>
+        <div className='hometitle4'>Unser Team</div>
       <div className='homedescriptionrow'>
         <div className='homedescriptioncontainer'>
           <div class="card">
@@ -90,32 +66,9 @@ function Home() {
                 </div>
               </div>
       </div>
-      <div className='homeformularcontainer'>
-        <div className='homeformulardescription'>
-          <div className='homeformulartext'>
-            <p className='hometitle'>Beitritt</p>
-            <p>Wir freuen uns, dass Sie sich für eine Mitgliedschaft interessieren. Um in OPTIMIND aufgenommen zu werden, bitten wir Sie, unser kurzes Aufnahmeformular auszufüllen.
-              Das Formular enthält einige grundlegende Fragen zu Ihrem Hintergrund, Ihren Interessen und Ihren Zielen. Diese Informationen helfen uns dabei, sicherzustellen, dass unsere Mitglieder gut zusammenpassen und dass wir Ihnen die bestmögliche Unterstützung bieten können.
-              Nachdem wir Ihr Formular erhalten haben, werden wir uns schnellstmöglich mit Ihnen in Verbindung setzen.</p>
-              <button className="primarybutton" type="button"  onClick={()=> window.open('/aufnahme')}>zum Formular</button>
-          </div>
-        </div>
-        <div className='homeformularimage'>
-          <img src={Formular_Image} className='formularimage'></img>
-        </div>
-      </div>
-      <div className='homesponsorcontainer'>
-        <div className='homesponsortitle'>
-          <p className='hometitle2'>Unsere Sponsoren und Partner</p>
-        </div>
-        <div className='homesponsorrow'>
-          <div className='sponsorcard' onClick={()=> window.open('http://bildung-in-zukunft.de/')}><img className='sponsorimage' src={Sponsor_TZL}></img></div>
-          <div className='sponsorcard' onClick={()=> window.open('https://semmelbrothers.de/')}><img className='sponsorimage' src={Sponsor_UNI}></img></div>
-        </div>
-      </div>
-      <Footer></Footer>
+        <Footeralt></Footeralt>
     </div>
   );
 }
 
-export default Home;
+export default Team;

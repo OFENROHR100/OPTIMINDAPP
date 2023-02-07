@@ -1,12 +1,12 @@
 import './footer.css'
 
-const Footer = () => {
+const Footeralt = () => {
     function redirect() {
         window.location.replace("/");
     }
 
     return (
-      <footer className='footer-section'>
+      <footer className='footer-section-alternate'>
         <div className='footerwrapper'>
           <div className='footerdescriptionquery'>
             <div className='footerdescription'>
@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className='footerlinksquery'>
             <div className='footerlinks'>
-            <li><a className='footerlink' href='/'>Home</a></li>
+              <li><a className='footerlink' href='/'>Home</a></li>
               <li><a className='footerlink' href='team'>Team</a></li>
               <li><a className='footerlink' href='partner'>Partner</a></li>
               <li><a className='footerlink' href='aufnahme'>Aufnahme</a></li>
@@ -32,9 +32,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-
     );
 };
 
-export default Footer;
+export default Footeralt;

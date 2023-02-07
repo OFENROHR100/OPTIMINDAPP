@@ -1,14 +1,26 @@
 .footer-section {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #699778;
+  background-color: #011627;
+}
+
+.footer-section-alternate {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #011627;
+  margin-top: 5%;
+}
+
+.footer-section-alternate2 {
+  padding-top: 150px;
+  padding-bottom: 20px;
+  background-color: #011627;
 }
 
 .textlogofooter {
   color: #ffffff;
   font-size: 32px;
   box-sizing: border-box;
-  font-family: 'Lobster' !important;
 }
 
 .footerwrapper {
@@ -29,6 +41,10 @@
   text-align: left;
   margin-right: 20px;
   margin-left: 20px;
+}
+
+.footerlink {
+  color: white;
 }
 
 .footericons {

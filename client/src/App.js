@@ -1,17 +1,25 @@
 import './App.css';
-import Shop from './apps/Shop';
 import Home from './apps/Home';
-import Cart from './apps/Cart';
-import Login from './apps/Login';
+import Team from './apps/Team';
+import Partner from './apps/Partner';
+import Aufnahme from  './apps/Aufnahme';
+import Kontakt from './apps/Kontakt';
 import {Route, Routes} from "react-router-dom"
+import React, { useLayoutEffect, useEffect, useState } from 'react';
 
 function App() {
+  useEffect(() => {
+    window.process = {
+      ...window.process,
+    };
+  }, []);
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/shop" element={<Shop />} />
-      <Route path='/cart' element={<Cart />} />
-      <Route path='/login' element={<Login />} />
+      <Route path='/team' element={<Team />} />
+      <Route path='/partner' element={<Partner/>} />
+      <Route path='/aufnahme' element={<Aufnahme />} />
+      <Route path='/kontakt' element={<Kontakt />} />
     </Routes>
   );
 }
